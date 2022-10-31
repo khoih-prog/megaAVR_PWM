@@ -26,5 +26,5 @@
   "frameworks": "*",
   "platforms":  ["megaavr"],
   "examples": "examples/*/*/*.ino",
-  "headers": ["megaAVR_PWM.h]
+  "headers": ["megaAVR_PWM.h"]
 }
