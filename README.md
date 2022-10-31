@@ -156,7 +156,7 @@ Another way to install is to:
 
 TCB0-TCB3 are 16-bit timers.
 
-### 5. Important Notes
+### 3. Important Notes
 
 Before using any Timer, you have to make sure the **Timer has not been used by any other purpose.**
 
