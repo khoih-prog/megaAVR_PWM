@@ -6,8 +6,11 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#Contributing)
 [![GitHub issues](https://img.shields.io/github/issues/khoih-prog/megaAVR_PWM.svg)](http://github.com/khoih-prog/megaAVR_PWM/issues)
 
+
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
+<a href="https://profile-counter.glitch.me/khoih-prog/count.svg" title="Total khoih-prog Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog/count.svg" style="height: 30px;width: 200px;"></a>
+<a href="https://profile-counter.glitch.me/khoih-prog-megaAVR_PWM/count.svg" title="megaAVR_PWM Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog-megaAVR_PWM/count.svg" style="height: 30px;width: 200px;"></a>
 
 ---
 ---
@@ -179,7 +182,7 @@ TCB0-TCB3 are 16-bit timers.
 Before using any Timer, you have to make sure the **Timer has not been used by any other purpose.**
 
 
-```
+```cpp
 /******************************************************************************************************************************
   Pins can be used for hardware-PWM
   // For ATmega4809 (Nano Every, Uno WiFi Rev2, etc.)
@@ -326,7 +329,7 @@ https://github.com/khoih-prog/megaAVR_PWM/blob/7c73a23cf395fb3e7f8bdea6015bd412f
 The following is the sample terminal output when running example [PWM_DynamicDutyCycle](examples/PWM_DynamicDutyCycle) on **megaAVR Nano Every** using `MegaCoreX`, to demonstrate the ability to provide high PWM frequencies and ability to change DutyCycle `on-the-fly`.
 
 
-```
+```cpp
 Starting PWM_DynamicDutyCycle on MegaCoreX Nano Every
 megaAVR_PWM v1.0.0
 [PWM] megaAVR_PWM: _dutycycle = 32767
@@ -378,7 +381,7 @@ Actual data: pin = 3, PWM DC = 90.00, PWMPeriod = 250.00, PWM Freq (Hz) = 1000.0
 
 The following is the sample terminal output when running example [**PWM_Multi**](examples/PWM_Multi) on **megaAVR Nano Every**, to demonstrate the ability to provide high PWM frequencies on multiple `PWM-capable` pins.
 
-```
+```cpp
 Starting PWM_Multi on megaAVR Nano Every
 megaAVR_PWM v1.0.0
 =====================================================================================
@@ -400,7 +403,7 @@ Actual data: pin = 6, PWM DC = 50.00, PWMPeriod = 62.00, PWM Freq (Hz) = 4000.00
 
 The following is the sample terminal output when running example [**PWM_DynamicFreq**](examples/PWM_DynamicFreq) on **megaAVR Nano Every**, to demonstrate the ability to change dynamically PWM frequencies.
 
-```
+```cpp
 Starting PWM_DynamicFreq on megaAVR Nano Every
 megaAVR_PWM v1.0.0
 [PWM] megaAVR_PWM: _dutycycle = 32767
@@ -443,7 +446,7 @@ Actual data: pin = 3, PWM DC = 50.00, PWMPeriod = 250.00, PWM Freq (Hz) = 1000.0
 The following is the sample terminal output when running example [**PWM_Waveform**](examples/PWM_Waveform) on **megaAVR Nano Every**, to demonstrate how to use the `setPWM_manual()` function in wafeform creation
 
 
-```
+```cpp
 Starting PWM_Waveform on megaAVR Nano Every
 megaAVR_PWM v1.0.0
 [PWM] megaAVR_PWM: _dutycycle = 0
@@ -568,4 +571,4 @@ If you want to contribute to this project:
 
 ## Copyright
 
-Copyright 2022- Khoi Hoang
+Copyright (c) 2022- Khoi Hoang

@@ -33,23 +33,23 @@
 #define USING_TIMERB        true
 
 #if USING_TIMERB
-  // Pins tested OK in Nano Every ATmega4809
-  #define pinToUse      3            // TimerB1, for higher frequencies, up to 100KHz
-  //#define pinToUse      6            // TimerB0, for higher frequencies, up to 100KHz
-  
-  uint32_t PWM_Pins[]       = { 3, 6 };
+// Pins tested OK in Nano Every ATmega4809
+#define pinToUse      3            // TimerB1, for higher frequencies, up to 100KHz
+//#define pinToUse      6            // TimerB0, for higher frequencies, up to 100KHz
+
+uint32_t PWM_Pins[]       = { 3, 6 };
 
 #elif USING_ARDUINO_MEGA_AVR_CORE
-  // Pins tested OK in Nano Every ATmega4809
-  #define pinToUse      5            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
-  //#define pinToUse      9            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
-  //#define pinToUse     10            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
-  
-  // Only 1 pin to be used for TimerA0. All sharing same frequency
-  uint32_t PWM_Pins[]       = { 5 };
+// Pins tested OK in Nano Every ATmega4809
+#define pinToUse      5            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
+//#define pinToUse      9            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
+//#define pinToUse     10            // TimerA0, only accurate @ low frequencies (< 1KHz) because of low 250KHz clock
+
+// Only 1 pin to be used for TimerA0. All sharing same frequency
+uint32_t PWM_Pins[]       = { 5 };
 
 #else
-  #error TimerA0 to be used with Arduino megaAVR Core
+#error TimerA0 to be used with Arduino megaAVR Core
 #endif
 
 ////////////////////////////////////////////
