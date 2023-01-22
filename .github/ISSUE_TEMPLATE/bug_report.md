@@ -31,12 +31,14 @@ A clear and concise description of what you expected to happen.
 
 If applicable, add screenshots to help explain your problem.
 
+---
+
 ### Information
 
 Please ensure to specify the following:
 
 * Arduino IDE version (e.g. 1.8.19) or Platform.io version
-* `Arduino megaAVR` or `MegaCoreX` Core Version (e.g. Arduino megaAVR core v1.8.7 or MegaCoreX core v1.1.0)
+* `Arduino megaAVR` or `MegaCoreX` Core Version (e.g. Arduino megaAVR core v1.8.7 or MegaCoreX core v1.1.1)
 * Contextual information (e.g. what you were trying to achieve)
 * Simplest possible steps to reproduce
 * Anything that might be relevant in your opinion, such as:
@@ -44,13 +46,17 @@ Please ensure to specify the following:
   * Network configuration
 
 
+Please be educated, civilized and constructive as you've always been. Disrespective posts against [GitHub Code of Conduct](https://docs.github.com/en/site-policy/github-terms/github-event-code-of-conduct) will be ignored and deleted.
+
+---
+
 ### Example
 
 ```
 Arduino IDE version: 1.8.19
 Arduino megaAVR Core Version 1.8.7
 OS: Ubuntu 20.04 LTS
-Linux xy-Inspiron-3593 5.15.0-53-generic #59~20.04.1-Ubuntu SMP Thu Oct 20 15:10:22 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux xy-Inspiron-3593 5.15.0-58-generic #64~20.04.1-Ubuntu SMP Fri Jan 6 16:42:31 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 
 Context:
 I encountered a crash while trying to use the Timer Interrupt.
