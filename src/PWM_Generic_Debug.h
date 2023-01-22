@@ -8,11 +8,12 @@
 
   This is pure hardware-based PWM
 
-  Version: 1.0.0
+  Version: 1.0.1
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.0.0   K.Hoang      31/10/2022 Initial coding for megaAVR ATMEGA4809-based boards (UNO WiFi Rev2, NANO_EVERY, etc. )
+  1.0.1   K Hoang      22/01/2023 Add `PWM_StepperControl` example
  *****************************************************************************************************************************/
 
 #pragma once

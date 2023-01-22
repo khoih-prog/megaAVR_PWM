@@ -42,6 +42,7 @@
   * [ 5. PWM_Multi](examples/PWM_Multi)
   * [ 6. PWM_MultiChannel](examples/PWM_MultiChannel)
   * [ 7. PWM_Waveform](examples/PWM_Waveform)
+  * [ 8. PWM_StepperControl](examples/PWM_StepperControl) **New**
 * [Example PWM_Multi](#example-PWM_Multi)
 * [Debug Terminal Output Samples](#debug-terminal-output-samples)
   * [1. PWM_DynamicDutyCycle on MegaCoreX Nano Every](#1-PWM_DynamicDutyCycle-on-MegaCoreX-Nano-Every)
@@ -131,7 +132,7 @@ Functions using normal software-based PWMs, relying on loop() and calling millis
 ## Prerequisites
 
 1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
-2. [`Arduino megaAVR core 1.8.7+`](https://github.com/arduino/ArduinoCore-megaavr/releases) for Arduino megaAVR boards. Use Arduino Board Manager to install.
+2. [`Arduino megaAVR core 1.8.7+`](https://github.com/arduino/ArduinoCore-megaavr/releases) for Arduino megaAVR boards. [![GitHub release](https://img.shields.io/github/release/arduino/ArduinoCore-megaavr.svg)](https://github.com/arduino/ArduinoCore-megaavr/releases/latest). Use Arduino Board Manager to install.
 3. [`MegaCoreX megaAVR core 1.1.0+`](https://github.com/MCUdude/MegaCoreX/releases) for Arduino megaAVR boards.  [![GitHub release](https://img.shields.io/github/release/MCUdude/MegaCoreX.svg)](https://github.com/MCUdude/MegaCoreX/releases/latest). Follow [**How to install**](https://github.com/MCUdude/MegaCoreX#how-to-install).
  
  
@@ -307,7 +308,7 @@ PWM_Instance->setPWM_manual(PWM_Pins, new_level);
  5. [PWM_Multi](examples/PWM_Multi)
  6. [PWM_MultiChannel](examples/PWM_MultiChannel)
  7. [PWM_Waveform](examples/PWM_Waveform)
-
+ 8. [PWM_StepperControl](examples/PWM_StepperControl) **New**
  
 ---
 ---
@@ -329,7 +330,7 @@ The following is the sample terminal output when running example [PWM_DynamicDut
 
 ```cpp
 Starting PWM_DynamicDutyCycle on MegaCoreX Nano Every
-megaAVR_PWM v1.0.0
+megaAVR_PWM v1.0.1
 [PWM] megaAVR_PWM: _dutycycle = 32767
 [PWM] setPWM_Int: input dutycycle = 127
 [PWM] setPWM_Int: _timer = 3
@@ -381,7 +382,7 @@ The following is the sample terminal output when running example [**PWM_Multi**]
 
 ```cpp
 Starting PWM_Multi on megaAVR Nano Every
-megaAVR_PWM v1.0.0
+megaAVR_PWM v1.0.1
 =====================================================================================
 Index	Pin	PWM_freq	DutyCycle	Actual Freq
 =====================================================================================
@@ -403,7 +404,7 @@ The following is the sample terminal output when running example [**PWM_DynamicF
 
 ```cpp
 Starting PWM_DynamicFreq on megaAVR Nano Every
-megaAVR_PWM v1.0.0
+megaAVR_PWM v1.0.1
 [PWM] megaAVR_PWM: _dutycycle = 32767
 [PWM] setPWM_Int: input dutycycle = 127
 [PWM] setPWM_Int: _timer = 3
@@ -446,7 +447,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```cpp
 Starting PWM_Waveform on megaAVR Nano Every
-megaAVR_PWM v1.0.0
+megaAVR_PWM v1.0.1
 [PWM] megaAVR_PWM: _dutycycle = 0
 [PWM] setPWM: _dutycycle = 0
 [PWM] setPWM_Int: input dutycycle = 0
@@ -537,7 +538,7 @@ Submit issues to: [megaAVR_PWM issues](https://github.com/khoih-prog/megaAVR_PWM
  1. Basic hardware-based multi-channel PWMs for **megaAVR-based boards** such as `UNO WiFi Rev2`, `AVR_Nano_Every`, etc.**, using either
  - [`Arduino megaAVR core`](https://github.com/arduino/ArduinoCore-megaavr) or
  - [`MegaCoreX megaAVR core`](https://github.com/MCUdude/MegaCoreX)
-
+ 2. Add example [PWM_StepperControl](examples/PWM_StepperControl) to demo how to control Stepper Motor using PWM
 
 
 ---
@@ -546,6 +547,15 @@ Submit issues to: [megaAVR_PWM issues](https://github.com/khoih-prog/megaAVR_PWM
 ### Contributions and Thanks
 
 Many thanks for everyone for bug reporting, new feature suggesting, testing and contributing to the development of this library.
+
+1. Thanks to [Paul van Dinther](https://github.com/dinther) for proposing new way to use PWM to drive Stepper-Motor in [Using PWM to step a stepper driver #16](https://github.com/khoih-prog/RP2040_PWM/issues/16), leading to v2.0.3
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/dinther"><img src="https://github.com/dinther.png" width="100px;" alt="dinther"/><br /><sub><b>Paul van Dinther</b></sub></a><br /></td>
+  </tr>
+</table>
 
   
 ---
